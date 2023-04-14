@@ -45,6 +45,34 @@
                     </div>
                 </div>
             </form>
+            <h1 id="city">Lynchburg, Virginia</h1>
+            <ul>
+                <li>Last Updated: <span id="date">Tuesday 16:00</span></li>
+                <li id="description">Storming</li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <img
+                    src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
+                    alt="Cloudy icon"
+                    id="icon"
+                    class="weather-icon float-left"
+                  /> 
+                  <span class="temperature" id="temperature"></span>
+                  <span class="units">
+                    <a href="#" id="celsius-link">°C</a>
+                    <a href="#" id="Fahrenheit-link">°F</a>
+                  </span>
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="parameters">
+                    <ul>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span> km/h</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
