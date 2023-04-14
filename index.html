@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"
+      integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Weather Forecaster</title>
+</head>
+<body>
+    <div  class="container">
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-9">
+                        <input type="search"
+                        placeholder="Type a city...."
+                        autofocus="on"
+                        autocomplete="off"
+                        id="city-input"
+                        class="form-control shadow-sm"
+                        style="width: 200px; height: 40px;"
+                        minlength="4"
+                        maxlength="40"
+                        size="50"
+                        required />
+                    </div>
+                    <div class="col-3">
+                        <input type="submit"
+                        value="Search"
+                        class="form-control btn brn-primary shadow-sm">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
