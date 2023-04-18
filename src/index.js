@@ -25,7 +25,7 @@ dateElement.innerHTML = `${days[currentDay]} ${hours}:${minutes}`;
 
 function search(city) {
     let apiKey = "42fc9ffc1da4d22ab3a123055816708c";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(getTemperature);
   }
   
@@ -81,10 +81,10 @@ function search(city) {
   let form = document.querySelector("#search-form");
   form.addEventListener("submit", handleSubmit);
 
-  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  let fahrenheitLink = document.querySelector("#Fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-  let celsiusLink = document.querySelector("celsius-link");
+  let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
   search("New York");
