@@ -87,6 +87,7 @@ h1 {
   .weather-forecast {
     margin-top: 20px;
     text-align: center;
+    width: 650px;
   }
   .weather-forecast-date {
     font-size: 18px;
