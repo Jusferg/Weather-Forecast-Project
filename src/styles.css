@@ -9,7 +9,7 @@ body {
     border: 1px solid black;
     margin: 0 auto;
     width: 700px;
-    height: 525px;
+    height: 550px;
     border-radius: 10px;
     background: white;
     padding-top: 20px;
@@ -80,4 +80,14 @@ h1 {
   .weather-temp .active:hover {
     text-decoration: none;
   }
-  
+  .weather-temperature .units {
+    position: relative;
+    
+  }
+  .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .weather-forecast-date {
+    font-size: 18px;
+  }
