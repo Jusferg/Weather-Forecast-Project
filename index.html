@@ -21,28 +21,28 @@
     <title>React Weather App</title>
 </head>
 <body>
-    <div  className="container">
-        <div className="weather-app">
-            <form className="search-form" id="search-form">
-                <div className="row">
-                    <div className="col-9">
+    <div  class="container">
+        <div class="weather-app">
+            <form class="search-form" id="search-form">
+                <div class="row">
+                    <div class="col-9">
                         <input type="search"
                         placeholder="Type a city...."
                         autofocus="on"
                         autocomplete="off"
                         id="city-input"
-                        className="form-control shadow-sm"
+                        class="form-control shadow-sm"
                         style="width: 200px; height: 40px;"
                         minlength="4"
                         maxlength="40"
                         size="50"
                         required />
                     </div>
-                    <div className="col-3">
+                    <div class="col-3">
                         <input type="submit"
                         value="Search"
                         id="btn"
-                        className="btn btn-primary shadow-sm">
+                        class="btn btn-primary shadow-sm">
                     </div>
                 </div>
             </form>
@@ -51,28 +51,28 @@
                 <li>Last Updated: <span id="date">Tuesday 16:00</span></li>
                 <li id="description">Storming</li>
             </ul>
-            <div className="row">
-                <div className="clearfix weather-temp">
+            <div class="row">
+                <div class="clearfix weather-temp">
                     <img
                     src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
                     alt="Cloudy icon"
                     id="icon"
-                    className="weather-icon float-left"
+                    class="weather-icon float-left"
                   /> 
-                  <span className="temperature" id="temperature"></span>
-                  <span className="units"> °F
+                  <span class="temperature" id="temperature"></span>
+                  <span class="units"> °F
                   </span>
                 </div>
             </div>
-            <div className="col-9">
-                <div className="parameters">
+            <div class="col-9">
+                <div class="parameters">
                     <ul>
                         <li>Humidity: <span id="humidity"></span>%</li>
                         <li>Wind: <span id="wind"></span> mph</li>
                     </ul>
                 </div>
             </div> 
-            <div className="weather-forecast" id="forecast"></div>    
+            <div class="weather-forecast" id="forecast"></div>    
         </div>
         <a href="https://github.com/Jusferg/Weather-Forecast-Project.git" target="_blank">Open-Source code</a> by Tia D Ferguson
     </div>
